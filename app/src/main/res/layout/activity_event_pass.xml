@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:context="in.co.appyfest.EventPassActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:id="@+id/cardView"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <View
+            android:id="@+id/border4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/headings" />
+
+        <TextView
+            android:id="@+id/passDummy2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/border4"
+            android:fontFamily="sans-serif-light"
+            android:text="ENTRY PASS"
+            android:inputType="textMultiLine"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/border2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/passDummy2"
+            android:layout_marginTop="2dp"
+            android:background="@color/headings" />
+
+        <TextView
+            android:id="@+id/txtFestName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passDummy2"
+            android:fontFamily="sans-serif-light"
+            android:hint="FEST NAME"
+
+            android:inputType="textMultiLine"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/border1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txtFestName"
+            android:layout_marginTop="2dp"
+            android:background="@color/headings" />
+
+        <TextView
+            android:id="@+id/passEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/border1"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-light"
+            android:hint="EVENT NAME"
+            android:inputType="textMultiLine"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/border5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/passEventName"
+            android:layout_marginTop="2dp"
+            android:background="@color/headings" />
+
+        <LinearLayout
+            android:id="@+id/passLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/border5"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/passDp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/noimage" />
+
+            <ImageButton
+                android:id="@+id/passQr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/border3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/passLayout1"
+            android:layout_marginTop="2dp"
+            android:background="@color/headings" />
+
+        <LinearLayout
+            android:id="@+id/passLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/border3"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/passUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:fontFamily="sans-serif-light"
+                android:hint="Username"
+                android:inputType="textMultiLine"
+                android:maxLines="1"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/passEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:textAlignment="textEnd"
+                android:hint="Email"
+                android:inputType="textImeMultiLine"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passLayout2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/passCollege"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:hint="College"
+                android:textAlignment="textStart"
+                android:inputType="textMultiLine"
+                android:maxLines="1"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/passPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:fontFamily="sans-serif-light"
+                android:hint="Phone"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passLayout3"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/passDummy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:fontFamily="sans-serif-light"
+                android:inputType="text"
+                android:maxLines="1"
+                android:text="REGISTRATION FEE" />
+
+            <TextView
+                android:id="@+id/passCharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:fontFamily="sans-serif-light"
+                android:inputType="phone"
+                android:text="FREE" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/border6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/passLayout4"
+            android:layout_marginTop="2dp"
+            android:background="@color/headings" />
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textImeMultiLine"
+        android:layout_marginTop="10dp"
+        android:text="Note-"
+        android:layout_below="@id/cardView"
+        android:id="@+id/note"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/note1"
+        android:layout_below="@id/note"
+        android:inputType="textImeMultiLine"
+        android:text="1. Bring Screenshot of The Pass with you at the Time of Entry. "
+        android:textSize="10sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/note2"
+        android:layout_below="@id/note1"
+        android:inputType="textImeMultiLine"
+        android:text="2. Bring an identification proof like college id/ Aadhar card "
+        android:textSize="10sp"
+        />
+
+
+
+    </RelativeLayout>

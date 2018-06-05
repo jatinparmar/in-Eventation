@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4FC3F7"
+    tools:context="in.co.appyfest.RegisterParticipantActivity">
+
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/addParticipantClgeIcon"
+        android:src="@mipmap/noimage"
+        android:background="@color/transparent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/addParticipantUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/addParticipantClgeIcon"
+        android:background="@drawable/inputoutline2"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorLink="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/addParticipantEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addParticipantUsername"
+        android:layout_margin="5dp"
+        android:background="@drawable/inputoutline2"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColorLink="@color/colorAccent" />
+    <EditText
+        android:id="@+id/addParticipantPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addParticipantEmail"
+        android:layout_margin="5dp"
+        android:background="@drawable/inputoutline2"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorLink="@color/colorAccent" />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addParticipantCollege"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/inputoutline2"
+        android:hint="Enter Your College/University Name"
+        android:layout_below="@+id/addParticipantPassword"
+
+        >
+
+    </AutoCompleteTextView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/addParticipantCollege"
+        android:id="@+id/participanthoriLinear"
+        >
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addParticipantCity"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/inputoutline2"
+            android:hint="City"
+            ></AutoCompleteTextView>
+
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addParticipantState"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/inputoutline2"
+            android:hint="State"
+            />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/participantSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/participanthoriLinear"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:text="SUBMIT"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
+
+
+
+

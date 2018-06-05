@@ -1,0 +1,78 @@
+
+
+    <ScrollView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        tools:context="in.co.appyfest.AddEventFragment"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+        <!-- TODO: Update blank fragment layout -->
+
+                <ImageButton
+                    android:id="@+id/addImgButtonThe"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="@color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/add_btn"
+
+                    />
+
+                <EditText
+                    android:id="@+id/postTheTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_below="@+id/addImgButtonThe"
+                    android:background="@drawable/input_outline"
+                    android:hint="Post title.."
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColorLink="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/postDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/postTheTitle"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/input_outline"
+                    android:hint="Post Description..."
+                    android:inputType="textMultiLine"
+                    android:padding="20dp"
+
+                    android:textColorLink="@color/colorAccent" />
+
+
+
+
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+               android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:layout_below="@+id/postDescription"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/eventParticipantImage"
+            android:scaleType="centerCrop"
+            android:background="@color/transparent"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/add_btn"
+            />
+
+        <TextView
+            android:id="@+id/eventParticipantTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fest Title Enters Here"
+            android:textSize="16sp"
+            android:padding="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventParticipantDescription"
+            android:layout_width="match_parent"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:text="Fest Description Enters Here" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/eventParicipantDummy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="15dp"
+                android:paddingTop="6dp"
+                android:paddingLeft="6dp"
+                android:textAlignment="viewStart"
+                android:paddingRight="15dp"
+                android:text="Registration Fee :"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/eventParticipantFees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="15dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="15dp"
+                android:paddingTop="6dp"
+                android:text="FREE !"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eventParticipantDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:textAlignment="textEnd"
+                android:paddingRight="15dp"
+                android:layout_weight="1"
+                android:text="Date and Time"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/participantPRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+
+            android:text="REGISTER HERE"
+            android:textColor="@color/white"
+            android:textStyle="bold"></Button>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4FC3F7"
+    tools:context="in.co.appyfest.Registration">
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/addClgeIcon"
+        android:src="@mipmap/noimage"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/addUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/addClgeIcon"
+        android:background="@drawable/inputoutline2"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorLink="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/addEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addUsername"
+        android:layout_margin="5dp"
+        android:background="@drawable/inputoutline2"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColorLink="@color/colorAccent" />
+    <EditText
+        android:id="@+id/addPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addEmail"
+        android:layout_margin="5dp"
+        android:background="@drawable/inputoutline2"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorLink="@color/colorAccent" />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addCollege"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/inputoutline2"
+        android:hint="Enter Your College/University Name"
+        android:layout_below="@+id/addPassword"
+
+        >
+
+    </AutoCompleteTextView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/addCollege"
+        android:id="@+id/horiLinear"
+        >
+       <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addCity"
+        android:layout_weight="1"
+           android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/inputoutline2"
+        android:hint="City"
+        ></AutoCompleteTextView>
+
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addState"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/inputoutline2"
+        android:hint="State"
+        />
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/addSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horiLinear"
+        android:background="@color/colorAccent"
+        android:text="SUBMIT"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white" />
+
+
+
+
+
+
+
+</RelativeLayout>

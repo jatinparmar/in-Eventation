@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.co.appyfest.SetupParticipantActivity">
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/transparent"
+        android:src="@mipmap/noimage"
+        android:id="@+id/setupParticipantImage"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+
+
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setupParticipantName"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setupParticipantImage"
+        android:hint="Name"
+        android:padding="10dp"
+        android:background="@drawable/input_outline"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setupParticipantCollege"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setupParticipantName"
+        android:background="@drawable/input_outline"
+        android:hint="College"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/participantlayout1"
+        android:layout_below="@id/setupParticipantCollege"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/setupParticipantState"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:background="@drawable/input_outline"
+            android:layout_marginRight="5dp"
+
+            android:hint="State"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/setupParticipantCity"
+            android:padding="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/input_outline"
+            android:layout_weight="1"
+
+            android:hint="City"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setupParticipantButton"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/participantlayout1"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="15dp"
+
+        />
+</RelativeLayout>

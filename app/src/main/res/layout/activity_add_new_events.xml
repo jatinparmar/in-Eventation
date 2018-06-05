@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+xmlns:android="http://schemas.android.com/apk/res/android"
+tools:context="in.co.appyfest.AddNewEventsActivity"
+
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:id="@+id/eventAddImgButtonThe"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/add_btn"
+
+        />
+
+    <EditText
+        android:id="@+id/eventPostTheTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/eventAddImgButtonThe"
+        android:background="@drawable/input_outline"
+        android:hint="Post title.."
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorLink="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/eventPostDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventPostTheTitle"
+        android:layout_margin="20dp"
+        android:background="@drawable/input_outline"
+        android:hint="Post Description..."
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+
+        android:textColorLink="@color/colorAccent" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventCharges"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/eventPostDescription"
+        android:hint="Event charges (Leave Blank If It's Free)"
+        android:padding="10dp"
+        android:inputType="number"
+
+        />
+
+
+
+
+
+    <Button
+        android:id="@+id/eventSubmitButton"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:layout_below="@+id/eventCharges"
+        />
+
+</RelativeLayout>
+</ScrollView>
+

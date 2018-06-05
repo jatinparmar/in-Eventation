@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "141702776618",
+    "firebase_url": "https://festmanagement-e92b4.firebaseio.com",
+    "project_id": "festmanagement-e92b4",
+    "storage_bucket": "festmanagement-e92b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141702776618:android:20ab58c580c9ea2d",
+        "android_client_info": {
+          "package_name": "in.co.appyfest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141702776618-r3067d67gv3b15asb3071456tu4f5vrf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.co.appyfest",
+            "certificate_hash": "64c27cf5d53e63c905f72db57e55aab965ffbf6f"
+          }
+        },
+        {
+          "client_id": "141702776618-ijdca6arufljs33ofvts36ttm305craq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDSQkC64I3SqKAA3KzQaBDp3Zqxsfm4A0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141702776618-ijdca6arufljs33ofvts36ttm305craq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
